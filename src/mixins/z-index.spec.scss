@@ -3,7 +3,7 @@
 
 @include test-module("Mixins") {
   @include test-module("Given z-index mixin") {
-      @include test("When used with a defaulr list of z-indices") {
+      @include test("When used with a default list of z-indices: (0, 1)") {
         @include test("- Then it generates the z-index-0 and z-index-1 helper classes") {
         @include assert {
           @include output {
@@ -24,7 +24,7 @@
         }
       }
 
-      @include test("When used with a custom list of z-indices: 1, 2") {
+      @include test("When used with a custom list of z-indices: (1, 2)") {
         @include test("- Then it generates the z-index-0 and z-index-1 helper classes") {
 
           $z-index-list-failing: 0, 2;

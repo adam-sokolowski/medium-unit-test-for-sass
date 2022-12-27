@@ -5,7 +5,7 @@
   @include test-module("Given shade() function") {
     @include it("When used with base colour and numeric modifier") {
       $color: #f0f;
-      $percentage: 40;
+      $percentage: 40%;
 
       $passingTest: shade($color, $percentage);
 
