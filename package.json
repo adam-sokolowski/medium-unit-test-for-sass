@@ -4,7 +4,7 @@
   "description": "Sterter repo for SASS unit testint with sass:true",
   "main": "index.js",
   "scripts": {
-    "source:test": "jest --env=node --verbose"
+    "sass:test": "jest --env=node --verbose"
   },
   "repository": {
     "type": "git",

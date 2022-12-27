@@ -1,0 +1,19 @@
+/// Changes the z-index position of an element
+/// @group Mixins
+$z-index-list: 0, 1 !default;
+
+@mixin z-index($z-indices: $z-index-list) {
+  @each $z-index in $z-indices {
+    @if $z-index == 0 {
+      &-0 {
+        z-index: 0;
+      }
+    }
+
+    @else {
+      &-#{$z-index} {
+        z-index: #{$z-index};
+      }
+    }
+  }
+}

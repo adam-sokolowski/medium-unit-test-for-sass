@@ -1,0 +1,13 @@
+/// Darkens a given color using SASS built-in mix() function
+/// @group Colors
+/// @param {color} $color
+/// @param {Number | color} $modifier
+@function shade($color, $modifier) {
+  @if type-of($modifier) == color {
+    @return $modifier;
+  }
+
+  @else {
+    @return mix(#000, $color, $modifier);
+  }
+}
