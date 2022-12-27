@@ -1,0 +1,21 @@
+{
+  "name": "unit-test-for-sass",
+  "version": "1.0.0",
+  "description": "Sterter repo for SASS unit testint with sass:true",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass:test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adam-sokolowski/unit-test-for-sass.git"
+  },
+  "keywords": [
+    "SASS",
+    "unit",
+    "test",
+    "Jest"
+  ],
+  "author": "Adam Sokołowski",
+  "license": "ISC"
+}
