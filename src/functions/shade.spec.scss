@@ -1,26 +1,26 @@
 @import "true";
 @import "./shade";
 
-@include test-module("Functions") {
-  @include test-module("Given shade() function") {
-    @include it("When used with base colour and numeric modifier") {
+@include describe("Functions") {
+  @include describe("Given shade() function") {
+    @include describe("When used with base colour and numeric modifier") {
       $color: #f0f;
-      $percentage: 40%;
+      $percentage: 40;
 
       $passingTest: shade($color, $percentage);
 
-        @include it("- Then it returns a #990099 value as a 40% shade of #f0f") {
+        @include it("Then return a #990099 value as a 40% shade of #f0f") {
           @include assert-equal($passingTest, #990099);
         }
     }
 
-    @include it("When used with base color and color modifier") {
+    @include describe("When used with base color and color modifier") {
       $color: #f0f;
       $colorValue: #0fff0f;
-
+  
       $failingTest: shade($color, $colorValue);
-
-        @include it("- Then it bypasses the mix function and returns the color modifier") {
+  
+        @include it("Then it should bypass the mix function and return the color modifier") {
           @include assert-equal($failingTest, #0fff0e);
         }
     }
