@@ -4,7 +4,7 @@
   "description": "Sterter repo for SASS unit testint with sass:true",
   "main": "index.js",
   "scripts": {
-    "test": "sass:test"
+    "source:test": "jest --env=node --verbose"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,12 @@
     "Jest"
   ],
   "author": "Adam Sokołowski",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^8.0.3",
+    "jest": "^27.0.3",
+    "path": "^0.12.7",
+    "sass": "^1.57.1",
+    "sass-true": "^6.0.0"
+  }
 }
